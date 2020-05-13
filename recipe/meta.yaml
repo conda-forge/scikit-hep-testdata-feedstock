@@ -19,10 +19,10 @@ requirements:
     - pip
     - python
     - pytest-runner
-    - importlib_resources
   run:
     - python
     - pyyaml
+    - importlib_resources
 
 test:
   source_files:
