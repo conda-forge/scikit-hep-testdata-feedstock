@@ -19,6 +19,7 @@ requirements:
     - pip
     - python
     - pytest-runner
+    - importlib_resources
   run:
     - python
     - pyyaml
