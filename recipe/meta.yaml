@@ -12,7 +12,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: 'SETUPTOOLS_SCM_PRETEND_VERSION={{version}} {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
     - python
     - pytest-runner
     - setuptools_scm
+    - toml  # Workaround for https://github.com/conda-forge/setuptools_scm-feedstock/pull/39
   run:
     - python
     - pyyaml
