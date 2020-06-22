@@ -1,5 +1,5 @@
 {% set name = "scikit-hep-testdata" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/scikit-hep/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4dda00d021fc18d78e89063604446f12fd773735224c2001b5b4fd9fca2b43fd
+  sha256: c9f3770e4edbdd98016047f0f60370c24d195fa75db8fc77b5a79daafe2f8ff3
 
 build:
   number: 0
   noarch: python
-  script: 'SETUPTOOLS_SCM_PRETEND_VERSION={{version}} {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: 'SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
