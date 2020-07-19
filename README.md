@@ -5,7 +5,7 @@ Home: https://github.com/scikit-hep/scikit-hep-testdata
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Example HEP files for testing and demonstrating
 
