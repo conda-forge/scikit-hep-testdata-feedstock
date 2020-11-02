@@ -5,11 +5,13 @@ Home: https://github.com/scikit-hep/scikit-hep-testdata
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-hep-testdata-feedstock/blob/master/LICENSE.txt)
 
 Summary: Example HEP files for testing and demonstrating
 
+Development: https://github.com/scikit-hep/scikit-hep-testdata/
 
+Documentation: https://github.com/scikit-hep/scikit-hep-testdata#installing-and-usage
 
 Current build status
 ====================
