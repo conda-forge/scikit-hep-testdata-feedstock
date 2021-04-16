@@ -25,21 +25,23 @@ requirements:
     - python >=2.7
     - pyyaml
     - importlib_resources
+    - requests
 
 test:
   source_files:
     - tests
   requires:
     - pytest
+    - pip
   imports:
     - skhep_testdata
   commands:
+    - pip check
     - pytest -vv tests/
 
 about:
   home: https://github.com/scikit-hep/scikit-hep-testdata
   license: BSD-3-Clause
-  license_family: BSD
   license_file: LICENSE
   summary: Example HEP files for testing and demonstrating
   doc_url: https://github.com/scikit-hep/scikit-hep-testdata#installing-and-usage
