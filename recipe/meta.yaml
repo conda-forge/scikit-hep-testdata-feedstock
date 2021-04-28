@@ -49,4 +49,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - chrisburr
+    - conda-forge/scikit-hep
