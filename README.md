@@ -1,11 +1,11 @@
-About scikit-hep-testdata
-=========================
+About scikit-hep-testdata-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-hep-testdata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/scikit-hep/scikit-hep-testdata
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/scikit-hep-testdata-feedstock/blob/main/LICENSE.txt)
 
 Summary: Example HEP files for testing and demonstrating
 
