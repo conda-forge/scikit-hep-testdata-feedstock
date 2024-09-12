@@ -10,19 +10,18 @@ source:
   sha256: 6a3e92d5f4ec197b07a643c327b68f7a4fdc6de0153361faea6b010886d6dc19
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: 'SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=2.7
-    - pytest-runner
+    - python >=3.8
+    - setuptools
     - setuptools_scm
-    - toml  # Workaround for https://github.com/conda-forge/setuptools_scm-feedstock/pull/39
   run:
-    - python >=2.7
+    - python >=3.8
     - pyyaml
     - importlib_resources
     - requests
