@@ -10,7 +10,7 @@ source:
   sha256: 6a3e92d5f4ec197b07a643c327b68f7a4fdc6de0153361faea6b010886d6dc19
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: 'SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
