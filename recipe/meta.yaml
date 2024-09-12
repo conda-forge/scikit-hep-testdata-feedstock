@@ -17,12 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
-    - pytest-runner
+    - python >=3.8
+    - setuptools
     - setuptools_scm
-    - toml  # Workaround for https://github.com/conda-forge/setuptools_scm-feedstock/pull/39
   run:
-    - python >=2.7
+    - python >=3.8
     - pyyaml
     - importlib_resources
     - requests
