@@ -1,5 +1,5 @@
 {% set name = "scikit-hep-testdata" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/scikit-hep/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 50077149aea977bc30e3546b3f7945f39f734db1ad3e3743f05607248bcef982
+  sha256: ce68bf7a21512fc6b1448421b3aede0ac846da2e09c6ea0ac2e55f8f618ffe9a
 
 build:
   number: 0
