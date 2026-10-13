@@ -1,0 +1,64 @@
+schema_version: 1
+
+context:
+  version: "0.6.9"
+  python_min: "3.10"
+
+package:
+  name: scikit-hep-testdata
+  version: ${{ version }}
+
+source:
+  url: https://github.com/scikit-hep/scikit-hep-testdata/archive/v${{ version }}.tar.gz
+  sha256: 58b6e7b43592e9e00f7da1f11c8fb6a42cfb1b6343dd815250169481f3544ad7
+
+build:
+  number: 1
+  noarch: python
+  script:
+    env:
+      SETUPTOOLS_SCM_PRETEND_VERSION: ${{ version }}
+    content: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+    - setuptools_scm
+  run:
+    - python >=${{ python_min }}
+    - pyyaml
+    - importlib_resources
+    - requests
+
+tests:
+  - python:
+      imports:
+        - skhep_testdata
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+      pip_check: true
+
+  - files:
+      source:
+        - tests
+    requirements:
+      run:
+        - python ${{ python_min }}.*
+        - pytest
+    script:
+      - pytest -vv tests/
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Example HEP files for testing and demonstrating
+  homepage: https://github.com/scikit-hep/scikit-hep-testdata
+  repository: https://github.com/scikit-hep/scikit-hep-testdata/
+  documentation: https://github.com/scikit-hep/scikit-hep-testdata#installing-and-usage
+
+extra:
+  recipe-maintainers:
+    - conda-forge/scikit-hep
